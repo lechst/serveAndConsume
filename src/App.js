@@ -13,7 +13,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch('http://localhost:3000/users/3')
+    fetch('http://localhost:3000/users/50')
       .then(res => res.json())
       .then((data) => {
         this.setState({ contacts: data })

@@ -12,7 +12,7 @@ var appRouter = function (app) {
 			lastName: faker.name.lastName(),
 			username: faker.internet.userName(),
 			email: faker.internet.email(),
-			image: faker.image.imageUrl()
+			image: faker.image.avatar()
 		});
 		res.status(200).send(data);
 	});
@@ -22,13 +22,13 @@ var appRouter = function (app) {
 		var num = req.params.num;
 
 		if (isFinite(num) && num  > 0 ) {
-			for (i = 0; i <= num-1; i++) {
+			for (let i = 0; i <= num-1; i++) {
 				users.push({
 					firstName: faker.name.firstName(),
 					lastName: faker.name.lastName(),
 					username: faker.internet.userName(),
 					email: faker.internet.email(),
-					image: faker.image.imageUrl()
+					image: faker.image.avatar()
 				});
 			}
 

@@ -10,6 +10,7 @@ const Contacts = ({contacts}) => {
 						<h5 className="card-title">{contact.username}</h5>
 						<h6 className="card-subtitle mb-2 text-muted">{contact.email}</h6>
 						<p className="card-text">{contact.image}</p>
+						<img className="img-fluid" src={contact.image} alt=""></img>
 					</div>
 				</div>
 			))}
